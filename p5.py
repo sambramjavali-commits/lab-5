@@ -1,6 +1,6 @@
-p = float(sys.argv[1])
-r = float(sys.srgv[2])
-t = float(sys.argv[3])
+p = int(sys.argv[1])
+r = int(sys.srgv[2])
+t = int(sys.argv[3])
 
 si = (p * r * t) / 100
 
