@@ -1,10 +1,10 @@
-from p5 import simple_interest
+from p5 import calculate_si
 
 def test_simple_interest():
-    assert simple_interest(10000, 5, 2) == 1000
+    assert calculate_si(10000, 5, 2) == 1000
 
-def test_simple_interest_2():
-    assert simple_interest(5000, 10, 2) == 1000
+def test_zero_interest():
+    assert calculate_si(10000, 0, 2) == 0
 
-def test_simple_interest_3():
-    assert simple_interest(2000, 5, 3) == 300
+def test_one_year():
+    assert calculate_si(5000, 10, 1) == 500

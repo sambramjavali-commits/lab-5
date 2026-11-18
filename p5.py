@@ -1,8 +1,11 @@
-principal = float(input("Enter Principal Amount: "))
-rate = float(input("Enter Rate of Interest: "))
-time = float(input("Enter Time (in years): "))
+def calculate_si(principal, rate, time):
+    return (principal * rate * time) / 100
 
-simple_interest = (principal * rate * time) / 100
 
-print("Simple Interest =", simple_interest)
+if __name__ == "__main__":
+    principal = float(input("Enter principal amount: "))
+    rate = float(input("Enter rate of interest: "))
+    time = float(input("Enter time in years: "))
 
+    si = calculate_si(principal, rate, time)
+    print("Simple Interest:", si)
